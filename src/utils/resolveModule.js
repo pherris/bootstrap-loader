@@ -17,6 +17,7 @@ export default function(module) {
     });
     return resolvedPath;
   } catch (error) {
+    console.log(error, error.message, error.stack);
     return false;
   }
 }
